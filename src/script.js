@@ -8,4 +8,5 @@ form.addEventListener('submit', e => {
     .then(response => alert("Compra registrada com sucesso"))
     .then(() => { window.location.reload(); })
     .catch(error => console.error('Error!', error.message))
+    form.reset()
 })
