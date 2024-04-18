@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Continhas</title>
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="src/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post" name="purchase-form">
+            <h4>Registro de compras</h4>
+            <label for="pname">Descrição da compra</label>
+            <input type="text" name="pname" id="pname">
+            <label for="pprice">Valor</label>
+            <input type="number" name="pprice" id="pprice" step="0.01">
+            <label for="ppay">Forma de pagamento</label>
+            <input type="text" name="ppay" id="ppay">
+            <label for="ptype">Dividido?</label>
+            <select id="typeofpurchase" name="ptype">
+                <option value="Dividido">Dividido</option>
+                <option value="Paguei para você">Paguei por você</option>
+            </select>
+    
+            <input type="submit" class="btn" value="Enviar">
+        </form>
+    </div>
+    
+</body>
+</html>
